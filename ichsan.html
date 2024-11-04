@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,16 @@
 </head>
 <style>
 </style>
+
 <body style="background-color: aquamarine;">
     <H1>BIODATA</H1>
     <div class="image">
-    <img src="" alt="">
-</div>
-    <img style="cursor: pointer; transition: transform .2s; :hover{transform: scale(1.5);}" src="asset/images/th.jpeg" alt="">
-    <H3>Perkenalkan Nama saya M Ichsan Abimayu, Saya tinggal di Banjarbaru, lahir di Tanah Laut 
+        <img src="" alt="">
+    </div>
+    <div style="transition: transform .2s;">
+        <img style=":hover{transform: scale(1.5);}" src="asset/images/th.jpeg" alt="">
+    </div>
+    <H3>Perkenalkan Nama saya M Ichsan Abimayu, Saya tinggal di Banjarbaru, lahir di Tanah Laut
         tanggal 12 Februari 2007, hobiku bermain basket, futsal dan sepak bola
     </H3> <br>
 
@@ -23,7 +27,14 @@
         <input type="text" id="fname" name="fname"><br><br>
         <label for="lname">No Telp:</label>
         <input type="number" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
-      </form>
+        <input type="submit" value="Submit" id="submit" onclick="Submit()">
+    </form>
 </body>
+<script>
+    function Submit() {
+        document.getElementById("submit")
+        alert("submit sucess")
+    }
+</script>
+
 </html>
